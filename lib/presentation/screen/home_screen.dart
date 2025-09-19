@@ -16,14 +16,15 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white60,
-      appBar: AppBar(title: Center(child: Text('Hoja de Vida')),
+      appBar: AppBar(title: Text('Hoja de Vida'),
+      centerTitle: true,
       backgroundColor: Colors.white60,),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
           const CircleAvatar(
             radius: 60,
-            backgroundImage: AssetImage("assets/foto.jpg"), 
+            backgroundImage: NetworkImage('https://i.pravatar.cc/300'), 
           ),
           SizedBox(height: 20),
           Column(
