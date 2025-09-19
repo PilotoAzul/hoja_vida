@@ -1,40 +1,39 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:rutas_hoja_vida/presentation/screen/datos_presonales_screen.dart';
+import 'package:rutas_hoja_vida/presentation/screen/experiencias_screen.dart';
 
-class AbilityScreen extends StatelessWidget {
-  static const name = 'ability-screen';
-  const AbilityScreen({super.key});
+class DatosPresonalesScreen extends StatelessWidget {
+  static const name = 'contacto-screen';
+  const DatosPresonalesScreen({super.key});
 
-  @override
+   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white60,
-      appBar: AppBar(title: const Text('Habilidades'),
+      appBar: AppBar(title: const Text('Datos personales'),
       backgroundColor: Colors.white60,),
       body: ListView(
-        padding:  EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         children:  [
           Card(
             child: ListTile(
-              leading: Icon(Icons.code),
+              leading: Icon(Icons.phone),
               tileColor: Colors.lightBlueAccent,
-              title: Text("Programación: Python, Java, Dart"),
-              
+              title: Text("Teléfono: +57 300 XXX XXXX"),
             ),
           ),
           Card(
             child: ListTile(
-              leading: Icon(Icons.language),
+              leading: Icon(Icons.email),
               tileColor: Colors.lightBlueAccent,
-              title: Text("Idiomas: Español, aprendiendo inglés"),
+              title: Text("Email: samuelrojo@correo.com"),
             ),
           ),
           Card(
             child: ListTile(
-              leading: Icon(Icons.analytics),
+              leading: Icon(Icons.link),
               tileColor: Colors.lightBlueAccent,
-              title: Text("Ciencia de datos (meta personal)"),
+              title: Text("GitHub: github.com/SamuelRojoGaviria"),
             ),
           ),
 
@@ -47,11 +46,10 @@ class AbilityScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8), 
             ),
             onPressed:(){
-            context.pushNamed(DatosPresonalesScreen.name);
+            context.pushNamed(ExperienciasScreen.name);
             },
             child:Text('Siguientes pagina'),
           )),
-
 
         ],
       ),

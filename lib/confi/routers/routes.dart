@@ -1,6 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:rutas_hoja_vida/presentation/screen/ability_screen.dart';
-import 'package:rutas_hoja_vida/presentation/screen/contacto_screen.dart';
+import 'package:rutas_hoja_vida/presentation/screen/datos_presonales_screen.dart';
 import 'package:rutas_hoja_vida/presentation/screen/education_screen.dart';
 import 'package:rutas_hoja_vida/presentation/screen/experiencias_screen.dart';
 import 'package:rutas_hoja_vida/presentation/screen/home_screen.dart';
@@ -36,8 +36,8 @@ final router = GoRouter(
     ),
     GoRoute(
       path: '/contacto',
-      name: ContactoScreen.name,
-      builder: (context, state) => const ContactoScreen(),
+      name: DatosPresonalesScreen.name,
+      builder: (context, state) => const DatosPresonalesScreen(),
     ),
   ],
 );
