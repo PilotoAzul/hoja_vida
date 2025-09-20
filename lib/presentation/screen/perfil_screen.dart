@@ -15,7 +15,7 @@ class PerfilScreen extends StatelessWidget {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
             onPressed: () {
-              context.goNamed('home-screen'); // Asegúrate que el nombre coincida con tu HomeScreen
+              context.goNamed('home-screen'); 
             },
         ),
         
