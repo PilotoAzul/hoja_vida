@@ -49,7 +49,7 @@ class HomeScreen extends StatelessWidget {
             onPressed:(){
             context.pushNamed(PerfilScreen.name);
             },
-            child:Text('Ver perfil profeciional'),
+            child:Text('Ver perfil profecional'),
           )),
           SizedBox(height: 10,),
           //BOTON EDUCACION

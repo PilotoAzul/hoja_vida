@@ -12,6 +12,12 @@ class PerfilScreen extends StatelessWidget {
       appBar: AppBar(
         title:  Text('Perfil'),
         backgroundColor: Colors.white60,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+            onPressed: () {
+              context.goNamed('home-screen'); // Asegúrate que el nombre coincida con tu HomeScreen
+            },
+        ),
         
         ),
         backgroundColor: Colors.white60,
